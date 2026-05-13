@@ -1,0 +1,14 @@
+# 打包接收参数：
+# *args    ：打包所有的位置参数（会形成一个元组）
+# **kwargs ：打包所有的关键字参数（会形成一个字典）
+def show_info(*args, **kwargs):
+    print(args)
+    print(kwargs)
+
+nums = (10, 20, 30)
+person = {'name': '张三', 'age': 18}
+
+# 解包传递参数：
+# *nums    ：将元组拆解成一个一个独立的位置参数
+# **person ：将字典拆解一个一个 key=value 形式的关键字参数
+show_info(*nums, **person)
