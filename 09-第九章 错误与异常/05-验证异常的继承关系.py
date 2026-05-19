@@ -1,0 +1,5 @@
+print(issubclass(ZeroDivisionError, ArithmeticError))
+print(issubclass(ZeroDivisionError, Exception))
+print(issubclass(ValueError, Exception))
+print(issubclass(KeyboardInterrupt, Exception))
+print(issubclass(KeyboardInterrupt, BaseException))
